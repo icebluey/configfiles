@@ -1,0 +1,13 @@
+#Port 22
+SyslogFacility AUTHPRIV
+PermitRootLogin yes
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+PrintMotd no
+ClientAliveInterval 120
+ClientAliveCountMax 720
+UseDNS no
+Banner none
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
